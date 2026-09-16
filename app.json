@@ -1,0 +1,9 @@
+{
+  "expo": {
+    "name":"University Park Lions","slug":"lions-club-mobile","version":"0.1.6","orientation":"portrait","scheme":"lionsclub","userInterfaceStyle":"automatic",
+    "ios":{"supportsTablet":true,"bundleIdentifier":"com.picklescoop.lionsclub","buildNumber":"7","infoPlist":{"LSApplicationQueriesSchemes":["fb","instagram","youtube","twitter","linkedin","barcelona","snssdk1233","discord","pinterest","snapchat","whatsapp","tg"]}},
+    "android":{"package":"com.picklescoop.lionsclub","versionCode":7},
+    "plugins":["expo-router","expo-secure-store","expo-notifications"],
+    "extra":{"apiBase":"https://api.picklescoop.com/wp-json/lcm-mobile/v1"}
+  }
+}
