@@ -2,29 +2,15 @@
   "expo": {
     "name": "University Park Lions",
     "slug": "lions-club-mobile",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "orientation": "portrait",
     "scheme": "lionsclub",
     "userInterfaceStyle": "automatic",
     "icon": "./assets/icon.png",
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.picklescoop.lionsclub",
-      "buildNumber": "8",
-      "infoPlist": {
-        "LSApplicationQueriesSchemes": ["fb","instagram","youtube","twitter","linkedin","barcelona","snssdk1233","discord","pinterest","snapchat","whatsapp","tg"]
-      }
-    },
-    "android": {
-      "package": "com.picklescoop.lionsclub",
-      "versionCode": 8,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
+    "splash": {"image":"./assets/splash-icon.png","resizeMode":"contain","backgroundColor":"#003B71"},
+    "ios": {"supportsTablet":true,"bundleIdentifier":"com.picklescoop.lionsclub","buildNumber":"9","infoPlist":{"LSApplicationQueriesSchemes":["fb","instagram","youtube","twitter","linkedin","barcelona","snssdk1233","discord","pinterest","snapchat","whatsapp","tg"]}},
+    "android": {"package":"com.picklescoop.lionsclub","versionCode":9,"adaptiveIcon":{"foregroundImage":"./assets/adaptive-icon.png","backgroundColor":"#003B71"}},
     "plugins": ["expo-router","expo-secure-store","expo-notifications"],
-    "extra": {"apiBase": "https://uplc.picklescoop.com/wp-json/lcm-mobile/v1"},
-    "splash": {"image":"./assets/splash-icon.png","resizeMode":"contain","backgroundColor":"#FFFFFF"}
+    "extra": {"apiBase":"https://uplc.picklescoop.com/wp-json/lcm-mobile/v1"}
   }
 }
