@@ -1,6 +1,6 @@
 {
   "name": "university-park-lions-mobile",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": true,
   "main": "expo-router/entry",
   "scripts": {"start":"expo start","android":"expo run:android","ios":"expo run:ios","doctor":"npx expo-doctor","deps:check":"expo install --check","deps:fix":"expo install --fix","audit":"npm audit"},
