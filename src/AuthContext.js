@@ -1,0 +1,5 @@
+import React,{createContext,useCallback,useContext,useEffect,useMemo,useState}from"react";
+import{getToken,login as apiLogin,logout as apiLogout,me,setToken}from"./api";
+const AuthContext=createContext(null);
+export function AuthProvider({children}){const[user,setUser]=useState(null),[loading,setLoading]=useState(true);const restore=useCallback(async()=>{setLoading(true);try{const token=await getToken();if(!token){setUser(null);return}setUser(await me())}catch(e){if(e.status===401)await setToken(null);setUser(null)}finally{setLoading(false)}},[]);useEffect(()=>{restore()},[restore]);const signIn=useCallback(async(login,password)=>{const data=await apiLogin(login,password);setUser(data.user||await me());return data},[]);const signOut=useCallback(async()=>{await apiLogout();setUser(null)},[]);const value=useMemo(()=>({user,loading,isLoggedIn:!!user,signIn,signOut,refresh:restore}),[user,loading,signIn,signOut,restore]);return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>}
+export function useAuth(){return useContext(AuthContext)}
