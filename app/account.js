@@ -8,7 +8,7 @@ import{api}from'../src/api';
 import{useAuth}from'../src/AuthContext';
 import H from'../components/ClubHeader';
 import{C,card,sectionTitle}from'../src/theme';
-const menu=[['My Profile','person-outline','/members'],['My Events','calendar-outline','/calendar'],['My Posts','chatbubble-outline','/communications'],['Notifications','notifications-outline',null],['App Settings','settings-outline',null],['Help & Support','help-circle-outline',null],['About','information-circle-outline',null]];
+const menu=[['My Profile','person-outline','/members'],['My Events','calendar-outline','/calendar'],['My Posts','chatbubble-outline','/communications'],['Notifications','notifications-outline','/notifications'],['App Settings','settings-outline',null],['Help & Support','help-circle-outline',null],['About','information-circle-outline',null]];
 export default function Account(){
  const{ready,signedIn,user,signOut}=useAuth();
  const[c,setC]=useState(true),[e,setE]=useState(true);
