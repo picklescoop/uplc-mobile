@@ -2,14 +2,14 @@
   "expo": {
     "name": "University Park Lions",
     "slug": "lions-club-mobile",
-    "version": "0.1.12",
+    "version": "0.1.13",
     "orientation": "portrait",
     "scheme": "lionsclub",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.picklescoop.lionsclub",
-      "buildNumber": "13",
+      "buildNumber": "14",
       "infoPlist": {
         "LSApplicationQueriesSchemes": [
           "fb",
@@ -29,7 +29,7 @@
     },
     "android": {
       "package": "com.picklescoop.lionsclub",
-      "versionCode": 13,
+      "versionCode": 14,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
